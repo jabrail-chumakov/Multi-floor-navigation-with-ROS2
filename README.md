@@ -31,9 +31,8 @@ Exercise
 In order to run the program, you should enter the commands below in the following order:
 
 ```bash
-$ roslaunch final_assignment simulation_gmapping.launch
-$ roslaunch final_assignment move_base.launch
-$ roslaunch final_assignment main_menu.launch
+$ ros2 launch my_robot my-robot.launch.py 
+$ ros2 run my_robot test.py 
 ```
 The first script should run Gazebo and RVIZ in the new windows. The second script will run `move_base` launch file, while the last one should open the program itself.
 
