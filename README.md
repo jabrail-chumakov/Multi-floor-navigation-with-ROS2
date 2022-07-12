@@ -64,7 +64,7 @@ Video Demonstration
 
 Below you can watch a demonstration of this assignment:
 
-[<img src="https://user-images.githubusercontent.com/67557966/141862028-4c13ba55-2e97-415f-b7d4-bb2fb68122c2.jpg" width="80%">](https://youtu.be/GY2TLpTeGtY))
+[<img src="https://user-images.githubusercontent.com/67557966/178591457-5f028d8b-1b60-413b-86c1-059195b7ca9b.png" width="80%">](https://youtu.be/GY2TLpTeGtY))
 
 Possible improvements
 -----------------------------
