@@ -19,6 +19,8 @@ To run this program you should first install the following:
   sudo apt install ros-<ros2-distro>-nav2-bringup
   ```
   Note: `<ros2-distro>` is the name of your ROS2 version.
+- Place all files from this GitHub repository in your working workspace's newly created `my_robot` folder (such as dev_ws/src/my_robot).
+- Navigate to your workspace in terminal and write `colcon build`.
 
 Nav2
 -----------------------------
@@ -34,7 +36,8 @@ In order to run the program, you should enter the commands below in the followin
 $ ros2 launch my_robot my-robot.launch.py 
 $ ros2 run my_robot test.py 
 ```
-The first script should run Gazebo and RVIZ in the new windows. The second script will run `move_base` launch file, while the last one should open the program itself.
+The first script should run Gazebo and RVIZ in the new windows. The second script will move the robot between floors. 
+Note: Don't forget to build your workspace before writing these commands above.
 
 
 Task objectives
