@@ -39,23 +39,10 @@ $ ros2 run my_robot test.py
 The first script should run Gazebo and RVIZ in the new windows. The second script will move the robot between floors. 
 Note: Don't forget to build your workspace before writing these commands above.
 
-
-Task objectives
----------
-### Requirements ###
-
-Develop a software architecture for the control of the robot in the environment. The software will rely on the `move_base` and `gmapping` packages for localizing the robot and planning the motion.
-
-The architecture is able to get the user request, and let the robot execute one of the following behaviors (depending on the user's input):
-- First option: autonomously reach x,y coordinate inserted by the user
-- Second option: let the user drive the robot with the keyboard
-- Third option: let the user drive the robot assisting them to avoid collisions
-- Fourth option: close program
-
 Working principle of proposed solution
 -----------------------------
 
-The proposed solution is simple and efficient and works almost perfectly. The solution consists of several cases when the robot needs to complete a particular command. The proposed solution works as follows, initially the robot is placed on the second floor, and then moves to the special elevator zone (similar to a real elevator). As soon as the robot reaches the special zone and stays there for a long time, the robot has an opportunity to move to another floor and dynamically changes the currently loaded map for navigation. It is important to note that on each floor there is a special movement zone, reaching which the robot has the opportunity to reach another floor. Thus, the main goal of the task, to change the map upon entering another floor, was achieved.
+The proposed solution is simple and efficient and works almost perfectly. The solution consists of several cases when the robot needs to complete a particular command. The proposed solution works as follows, initially the robot is placed on the first floor, and then moves to the worker to pick something from him. After that robot moves to a special elevator zone (similar to a real elevator). As soon as the robot reaches the special zone and stays there for a period of time, the robot has an opportunity to move to another floor (floor 0) and dynamically changes the currently loaded map for navigation. It is important to note that on each floor there is a special movement zone, reaching which the robot has the opportunity to reach another floor. Thus, the main goal of the task, to change the map upon entering another floor, was achieved. After reaching floor 0, the robot moves to pick up something from the map and then goes back to the elevator and moves to the last floor to hand over the delivery package to the doctor.
 
 `changeMap(map_filepath)` - Requests a change from the current map to map_filepath's yaml.
 
