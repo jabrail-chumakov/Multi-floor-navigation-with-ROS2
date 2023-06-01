@@ -8,6 +8,8 @@ Presentation to this project
 
 You can find presentation to this project on the following link: [presentation](https://docs.google.com/presentation/d/1Mzx13TFX9f57MzjbZGBgpcDochgEmuTHe6oEpUslk6Q/edit#slide=id.p)
 
+Also, if you have some problems with missing files, you can find the whole workspace on this [link](https://drive.google.com/drive/u/0/folders/1sHIAlIqJ8uGyvdpecEqLRhxajHQJ1a4W)
+
 Installation
 ----------------------
 
